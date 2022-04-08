@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        // $("#div1").attr("style", "color:red;");
+        // $("#div2").attr("style", "color:blue;");
+        // $("#div2").attr("class", "testBlue");
+
+        // alert($("#node1").html());
+
+        // html 적용 상태로 출력
+        $("#node2").html("<h1>테스트</h1><h2>테스트</h2><h3>테스트</h3>");
+
+        //html 적용하지 않은 상태로 출력
+        $("#node2").text("<h1>테스트</h1><h2>테스트</h2><h3>테스트</h3>");
+      });
+    </script>
+  </head>
+  <body>
+    <!-- <div id="div1" style="display: block" ;>테스트1</div>
+    <div id="div2" class="testDiv">테스트2</div> -->
+
+    <div id="nodel">
+      <table>
+        <tr>
+          <td>
+            <h2>테이블입니다.</h2>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="node2"></div>
+  </body>
+</html>
