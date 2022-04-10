@@ -5,12 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        // var txt = $("table").find("#txt").val();
+        var txt = $("table")
+          .find("tr:eq(0)")
+          .find("tr:eq(0)")
+          .find("tr:eq(0)")
+          .val();
+        var html = $("#txt").parent().next().find(".txt:eq(1)").val();
+
+        console.log("txt", txt);
+      });
+    </script>
   </head>
   <body>
     <table>
       <tr>
         <td>
           <input type="text" id="txt" value="텍스트값" />
+        </td>
+        <td>
+          <input type="text" id="txt" value="텍스트값" />
+          <input type="text" id="txt" value="텍스트값" />
+          <input type="text" id="txt" value="텍스트값" />
+          <input type="text" id="txt" value="텍스트값" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="radio" name="rdo" value="라디오 첫번째 값" />
+          <input
+            type="radio"
+            name="rdo"
+            value="라디오 첫번째 값"
+            checked="checked"
+          />
         </td>
       </tr>
     </table>
